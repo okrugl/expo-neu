@@ -1,0 +1,18 @@
+@mixin fonts ($size: 14px, $weigth: normal, $color: $white){
+    font-size: $size;
+    font-weight: $weigth;
+    color: $color;
+}
+
+@mixin container($top, $parties, $buttom) {
+    margin: 0 auto;
+    max-width: 1920px;
+    // padding: $top $parties $buttom;
+    padding-top: $top;
+    padding-bottom: $buttom;
+    
+    @if $parties == 0 {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+}

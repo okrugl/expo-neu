@@ -1,0 +1,134 @@
+.header{
+    &__wrapper{
+        @include container(70px, 0,70px);
+        background: #444;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        margin-right: 73px;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+
+        &__item{
+            list-style-type: none;
+            margin-right: 38px;
+        }
+
+        &__link{
+            text-decoration: none;
+            @include fonts(16px, 600);
+
+            &:hover{
+                background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .lang{
+        display: flex;
+        align-items: center;
+
+        &__button{
+            padding: 3px 5px;
+
+            @include fonts(14px, normal);
+            letter-spacing: -0.05em;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &--active{
+                background: linear-gradient(94.96deg, #FFBC7D 9.98%, #FF7A41 100%);
+            }
+        }
+    }
+    .search{
+        width: 275px;
+        height: 22px;
+        display: inline-block;
+        display: flex;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        position: relative;
+        /*justify-content: space-between;*/
+
+        .searchBox__radius--l{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            right: 100%;
+        }
+        .searchBox__radius--r{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            left: 60%;
+            top: 0;
+        }
+        
+        .searchBox{
+            display: inline-block;
+            /*justify-content: space-between;*/            
+        }
+
+        .search__line{
+            display: inline-block;
+            background-color: $bg;
+            box-sizing: border-box;
+        }
+
+        .searchBox__radius{
+            width: 10%;
+            height: 100%;
+            /*display: flex;*/
+            background-color: $bg;
+            position: absolute;
+            box-sizing: border-box;
+
+            >i{
+                display: flex;
+                justify-content: center;
+                align-items: centers;
+                    
+            }
+            
+            }
+
+           /* &__radius--l{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: darkcyan;    
+            }
+
+            &__radius--r{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;    
+            }*/
+        
+
+        .searchBox{
+           /* display: inline-block;*/
+        }
+        
+        
+        
+        &__line{
+         
+            
+        }
+
+    }
+
+}

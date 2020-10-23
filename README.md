@@ -1,1 +1,1 @@
-# expo-neu
+# ekspo
