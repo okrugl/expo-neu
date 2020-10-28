@@ -16,3 +16,9 @@
         padding-right: 135px;
     }
 }
+
+@mixin screen($max-width) {
+    @media screen and (max-width: $max-width) {
+        @content;
+    }
+}

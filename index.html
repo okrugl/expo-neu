@@ -8,6 +8,10 @@
 </head>
 <body>
     <div class="header">
+    <div class="header-bc">
+        <img src=".images/bc/bgc.png" alt="bc">
+        <div class="opaiti-bc"></div>
+    </div>
         <div class="header__wrapper">
             <div class="header__box">
                 <div class="header__logo">
@@ -34,24 +38,21 @@
                     </li>
                 </ul>
             </div>
-
             <div class="header__box">
                 <div class="search">
-                    <label class="searchBox">
-                        <div class="searchBox__radius searchBox__radius--l">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <input class="search__line" type="text" name="search">
-                        <div class="searchBox__radius searchBox__radius--r">
-                        </div>
-                    </label>
+                    <div class="search__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search__input">
+                        <input class="search__text" type="text">
+                    </div>
                 </div>
-            </div>
-
-            <div class="header__box">
                 <div class="lang">
-                    <button class="lang__button">Eng</button>
+                    <button class="lang__button">End</button>
                     <button class="lang__button lang__button--active">Ru</button>
+                </div>
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </div>
