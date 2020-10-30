@@ -1,0 +1,64 @@
+.preview{
+    height: 100vh;
+    background-image: url(../images/preview__bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__container{
+        @include container(0,0,0);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    &__title{
+        font-size: 70px;
+        font-weight: 600;
+        color: $white;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+    }
+
+    &__subtutle{
+        @include fonts(16px, 500, #BEC4CA);
+        line-height: 130%;
+    }
+
+    &__desc{
+        max-width: 655px;
+        @include fonts(14px, normal, $white);
+        line-height: 140%;
+        margin-top: 56px;
+        text-align: center; 
+    }
+
+    &__buttom{
+        margin-top: 20px;
+    }
+
+    &__socialNetworks{
+        @include container-right(0,0,0);
+        height: 100%;
+        /*display: flex;
+        justify-content: right;
+        align-items: center;*/
+        flex-direction: column; 
+        position: absolute;
+        top: 365px;
+        right: 130px;
+
+        > i{
+            @include fonts(20px, normal, $white);
+            line-height: 140%;
+            margin-top: 18px;
+        }
+    
+    }
+
+    
+    
+}

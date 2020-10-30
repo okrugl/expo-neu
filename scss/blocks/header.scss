@@ -1,31 +1,15 @@
 .header{
-    position: relative;
-    display: inline-flex;
-
-    > img{
-        opacity: 0.8;
-        width: 1920px;
-       
-    }
-    
-
-    /*.header-bc{
-              
-    }
-
-    .opaiti-bc{
-        background-color: rgba(1, 21, 41, 0.8);
-    }*/
-    
+    width: 100%;
+    position: fixed;
+    top: 0;
     &__wrapper{
         @include container(70px, 0,70px);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
 
         @include screen($extra-lg){
-            padding: 30px 15px;
+            padding: 30px 15px; 
         }
 
         @include screen($lg){
