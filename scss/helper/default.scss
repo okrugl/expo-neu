@@ -37,20 +37,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 3px solid #FFA751; 
-}
-
-.btn--gold--2{
-        display: inline-block;
-        padding: 3px 42px;
-        border-radius: 34px;
-        background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;     
-        
-        > span {
-         background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-      } 
-}
+} 
